@@ -3,5 +3,5 @@
   "description": "API.AI Vendor Hook Example",
   "repository": "https://github.com/two93/API.AI-Earnings-Webhook-Python",
   "logo": "http://xvir.github.io/img/apiai.png",
-  "keywords": ["api.ai", "natural language","python"]
+  "keywords": ["api.ai", "natural language"]
 }
