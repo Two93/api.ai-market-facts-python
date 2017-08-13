@@ -36,7 +36,7 @@ def makeWebhookResult(req):
 
     cost = {'USA':77.7, 'UK':7.8, 'Europe':7.9, 'Rest of World':6.6}
 
-    speech = "The revenue for " + zone + " is " + str(cost[zone]) + "%"
+    speech = "The revenue for " + zone + " is " + str(cost[zone]) + "%. US at 77.7% is the largest revenue source"
 
     print("Response:")
     print(speech)
