@@ -1,4 +1,4 @@
-#How to Provide Replies about Vendor Details to API.AI for webhook
+#Provide Replies about Vendor Details to API.AI for webhook
 
 This example shows how you can use Api.ai webhook to provide different vendor information from webhooks. Gives the details on revenue by geography for a vendor
 
