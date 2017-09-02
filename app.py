@@ -28,11 +28,12 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "vendor.revenue":
+    if req.get("result").get("action") != "action.marketfacts":
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
     zone = parameters.get("revenue-zone")
+# create a list of market facts for each supplier
 
     cost = {'USA':77.7, 'UK':7.8, 'Europe':7.9, 'Rest of World':6.6}
 
