@@ -1,4 +1,4 @@
-#Provide Replies about Vendor Details to API.AI for webhook
+Will return Provide Replies about Vendor Market Facts randomly to API.AI for webhook
 
 This example shows how you can use Api.ai webhook to provide different vendor information from webhooks. Gives the details on revenue by geography for a vendor
 
