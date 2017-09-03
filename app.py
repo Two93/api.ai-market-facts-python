@@ -3,6 +3,7 @@
 import urllib
 import json
 import os
+import random
 
 from flask import Flask
 from flask import request
@@ -32,12 +33,24 @@ def makeWebhookResult(req):
         return {}
     result = req.get("result")
     parameters = result.get("parameters")
-    zone = parameters.get("revenue-zone")
+    supplier = parameters.get("v-supplier")
 # create a list of market facts for each supplier
-
-    cost = {'USA':77.7, 'UK':7.8, 'Europe':7.9, 'Rest of World':6.6}
-
-    speech = "The revenue for " + zone + " is " + str(cost[zone]) + "%. US at 77.7% is the largest revenue source"
+ infosys_fact = ["Infosys Fact1","Infosys Fact 2", "InfosysFact 3", "Infosys Fact 4","Infosys Fact 5"]
+ cognizant_fact = ["Cognizant Fact 1","Cognizant Fact 2", "Cognizant Fact 3", "Cognizant Fact 4","Cognizant Fact 5"]
+ ibm_fact = ["IBM Fact 1","IBM Fact 2", "IBM Fact 3", "IBM Fact 4","IBM Fact 4"]
+# Select the Supplier 
+ if supplier = "Infosys":
+   fact = random.choice(infosys_fact)            
+ elif supplier ="Cognizant":
+    fact = random.choice(cognizant_fact)
+    # select a random fact from Cognizant List
+ elif supplier = "IBM":
+    fact = random.choice(ibm_fact)
+    #select a random fact from IBM list
+  else:
+    fact = "No supplier fact available"
+ 
+speech = fact
 
     print("Response:")
     print(speech)
@@ -47,7 +60,7 @@ def makeWebhookResult(req):
         "displayText": speech,
         #"data": {},
         # "contextOut": [],
-        "source": "apiai-vendor-earnings"
+        "source": "apiai-vendor-market-facts"
     }
 
 
