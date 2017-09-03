@@ -38,12 +38,12 @@ def makeWebhookResult(req):
     cognizant_fact = ["Cognizant Fact 1","Cognizant Fact 2", "Cognizant Fact 3", "Cognizant Fact 4","Cognizant Fact 5"]
     ibm_fact = ["IBM Fact 1","IBM Fact 2", "IBM Fact 3", "IBM Fact 4","IBM Fact 4"]
     # Select the Supplier 
-    if supplier = "Infosys":
+    if supplier == "Infosys":
         fact = random.choice(infosys_fact)            
-    elif supplier ="Cognizant":
+    elif supplier =="Cognizant":
         fact = random.choice(cognizant_fact)
         # select a random fact from Cognizant List
-    elif supplier = "IBM":
+    elif supplier == "IBM":
         fact = random.choice(ibm_fact)
         #select a random fact from IBM list
     else:
