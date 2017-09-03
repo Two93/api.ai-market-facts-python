@@ -49,7 +49,7 @@ def makeWebhookResult(req):
     else:
         fact = "No supplier fact available"
  
-speech = fact
+    speech = fact
 
     print("Response:")
     print(speech)
