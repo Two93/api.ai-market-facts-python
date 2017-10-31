@@ -36,10 +36,13 @@ def makeWebhookResult(req):
     supplier = parameters.get("v-supplier")
     infosys_fact = ["Infosys CEO Vishal Sikka resigned and change in board membership. \
                       A number of senior leaders left Infosys which were hired by Vishal.",\
-                    "Infosys Fact 2", \
-                    "InfosysFact 3",\
-                    "Infosys Fact 4",\
-                    "Infosys Fact 5"]
+                    "Infosys lowered their overall revenue guidance for this year to 5.5 to 6.5% ( original was 6.5% - 8.5%)", \
+                    "Infosys acquired a digital innovation and customer experience studio Brilliant Basics this quarter . \
+                     Brilliant Basics is a boutique digital design studio based out of London",\
+                    "Strong growth in this quarter in Infrastructure Management, BPO and Testing services. \
+                    See a strong growth in Insurance vertical, although a small chunk of the overall revenues.",\
+                    "New Chairman Nandan Nilekani talked about a strategy refresh . Strategy consistent with\
+                    moving away from a pure services to a software plus services model"]
     cognizant_fact = ["Cognizant Fact 1","Cognizant Fact 2", "Cognizant Fact 3", "Cognizant Fact 4","Cognizant Fact 5"]
     ibm_fact = ["IBM Fact 1","IBM Fact 2", "IBM Fact 3", "IBM Fact 4","IBM Fact 4"]
     # Select the Supplier 
