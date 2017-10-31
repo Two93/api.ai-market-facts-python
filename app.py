@@ -34,7 +34,12 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     supplier = parameters.get("v-supplier")
-    infosys_fact = ["Infosys Fact1","Infosys Fact 2", "InfosysFact 3", "Infosys Fact 4","Infosys Fact 5"]
+    infosys_fact = ["Change in Leadership. Infosys CEO Vishal Sikka resigned and change in board membership. \
+                      A number of senior leaders left Infosys which were hired by Vishal.",\
+                    "Infosys Fact 2", \
+                    "InfosysFact 3",\
+                    "Infosys Fact 4",\
+                    "Infosys Fact 5"]
     cognizant_fact = ["Cognizant Fact 1","Cognizant Fact 2", "Cognizant Fact 3", "Cognizant Fact 4","Cognizant Fact 5"]
     ibm_fact = ["IBM Fact 1","IBM Fact 2", "IBM Fact 3", "IBM Fact 4","IBM Fact 4"]
     # Select the Supplier 
