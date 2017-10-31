@@ -34,7 +34,7 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     supplier = parameters.get("v-supplier")
-    infosys_fact = ["Change in Leadership. Infosys CEO Vishal Sikka resigned and change in board membership. \
+    infosys_fact = ["Infosys CEO Vishal Sikka resigned and change in board membership. \
                       A number of senior leaders left Infosys which were hired by Vishal.",\
                     "Infosys Fact 2", \
                     "InfosysFact 3",\
